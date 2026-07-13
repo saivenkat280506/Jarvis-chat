@@ -1,0 +1,8 @@
+{
+    "Notepad": "C:\\Windows\\System32\\notepad.exe",
+    "Calculator": "ms-calculator:",
+    "Chrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "Microsoft Edge": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "Visual Studio Code": "C:\\Program Files\\Microsoft VS Code\\Code.exe",
+    "Spotify": "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Spotify\\Spotify.exe"
+}

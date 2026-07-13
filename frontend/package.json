@@ -1,0 +1,63 @@
+{
+  "name": "jarvis-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron-main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "software": "electron .",
+    "build-exe": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@react-three/postprocessing": "^3.0.4",
+    "@untitledui/icons": "^0.0.22",
+    "electron-context-menu": "^4.1.2",
+    "framer-motion": "^11.18.2",
+    "react": "^19.2.0",
+    "react-aria-components": "^1.16.0",
+    "react-dom": "^19.2.0",
+    "tailwind-animate": "^0.2.10",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-react-aria-components": "^2.0.1",
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+    "electron": "^41.2.0",
+    "electron-builder": "^25.1.8",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^4.2.2",
+    "vite": "^5.0.8"
+  },
+  "build": {
+    "appId": "com.jarvis.desktop",
+    "productName": "Jarvis Desktop",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "extraResources": [
+      {
+        "from": "../backend/dist/JarvisBackend",
+        "to": "JarvisBackend",
+        "filter": ["**/*"]
+      }
+    ],
+    "files": [
+      "dist/**/*",
+      "electron-main.cjs",
+      "package.json"
+    ]
+  }
+}

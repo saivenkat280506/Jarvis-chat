@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.env
+backend/.env
+settings.json
+backend/brain/settings.json
+*.webm
+*.wav
+*.mp3
+!backend/tts/voices/jarvis voice.wav
+!backend/FRIDAY voice.mp3
+backend/build/
+frontend/release/
+backend/logs.txt
+backend/wake_log.txt
+frontend/electron_log.txt
+backend/jarvis_memory.json
+backend/test_results.log
+*.log
+mcps/
+backend/executor/app_registry.json
+backend/executor/apps_registry.json
