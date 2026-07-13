@@ -13,6 +13,7 @@ backend/brain/settings.json
 !backend/tts/voices/jarvis voice.wav
 !backend/FRIDAY voice.mp3
 backend/build/
+backend/dist/
 frontend/release/
 backend/logs.txt
 backend/wake_log.txt
